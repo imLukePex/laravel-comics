@@ -1,3 +1,103 @@
 @import "~bootstrap/scss/bootstrap";
 
+header {
+    .topbar {
+        width: 100%;
+        padding: 20px 0;
+        background: #ffff;
+        box-shadow: 0 4px 5px -4px gray;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: space-between;
+
+        .logo-box {
+            width: 80px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 0;
+
+                li {
+                    padding-left: 25px;
+
+                    a {
+                        text-decoration: none;
+                        color: #000;
+                        font-size: 15px;
+                        font-weight: 500;
+                        padding: 44px 0;
+
+                        &.active,
+                        &:hover {
+                            color: $primary;
+                        }
+
+                        &.active {
+                            border-bottom: 5px solid $primary;
+                        }
+
+                    }
+
+                    h4 {
+                        font-weight: 600;
+                        font-size: 15px;
+                        color: black;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            input {
+                border: none;
+                border-bottom: 2px solid rgb(2, 130, 249);
+                margin-left: 80px;
+            }
+        }
+    }
+    .jumbotron {
+        height: 430px;
+        background-image: url('~res/imgs/jumbotron.jpg');
+        background-size: cover;
+    }
+}
+
+
+footer {
+    .feat-banner {
+        width: 100%;
+        padding: 45px 0;
+        background: #0c7cec;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+
+            .feat {
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 50px;
+                }
+
+                .text {
+                    margin-left: 10px;
+                    color: #ffff;
+                }
+            }
+        }
+
+    }
+}
+
 
